@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 const router = express.Router();
-const port = 8800;
+const port = process.env.PORT ||8800 ;
 
 app.use(express.json());
 
